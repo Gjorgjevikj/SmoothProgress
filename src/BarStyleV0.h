@@ -10,8 +10,8 @@
 
 #include <barstyle.h>
 
-#ifdef BAR_STYLE_V_0_IN_PROGMEM
-static const PROGMEM struct barstyle 
+#if (defined BAR_STYLE_V_0_IN_PROGMEM) || (defined BAR_STYLES_IN_PROGMEM)
+static const PROGMEM struct barstyle
 #else
 static const struct barstyle
 #endif

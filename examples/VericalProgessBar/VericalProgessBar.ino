@@ -21,7 +21,7 @@
 // insert #define BAR_STYLE_<#>_IN_PROGMEM before including the corresponding header with the style
 // do not forget to use the wrapper when passing the style structure to barstyle constructor
 // Include a style for vertical smooth progress bars
-#define BAR_STYLE_V_2_IN_PROGMEM 
+#define BAR_STYLES_IN_PROGMEM
 #include <BarStyleV2.h>
 
 // Define the lcd object for the display as usual

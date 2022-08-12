@@ -5,12 +5,11 @@
  *
  * 
  */
-
  
 #include <LiquidCrystal_I2C.h> 
 #include <SmoothProgress.h>
 
-#define BAR_STYLE_V_T_IN_PROGMEM 
+#define BAR_STYLES_IN_PROGMEM
 #include <BarStyleVT.h>
 
 LiquidCrystal_I2C lcd(0x27, 20, 4);  

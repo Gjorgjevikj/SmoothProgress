@@ -24,10 +24,10 @@
 #include <BarStyle2.h>
 #include <BarStyle3.h>
 #include <BarStyleBAT.h>
-#define BAR_STYLE_V_2_IN_PROGMEM
+#define BAR_STYLES_IN_PROGMEM
 #include <BarStyleV2.h>
-#define BAR_STYLE_V_T_IN_PROGMEM
 #include <BarStyleVT.h>
+#undef BAR_STYLES_IN_PROGMEM
 
 const barstyle* styleCollection[] = { &barStyle1, &barStyle2, &barStyle3, NULL };
 

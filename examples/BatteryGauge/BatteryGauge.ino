@@ -20,9 +20,8 @@
 // To use the flash (program) memory (a.k.a. PROGMEM) for storing the masks that define the style of the progress bar 
 // (and save some RAM memory) insert #define BAR_STYLE_<#>_IN_PROGMEM before including the corresponding header with the style
 // Do not forget to use the wrapper when passing the style structure to barstyle (LCD) constructor
-#define BAR_STYLE_BAT_IN_PROGMEM 
+#define BAR_STYLES_IN_PROGMEM
 #include <BarStyleBAT.h>
-#define BAR_STYLE_BAT_V_IN_PROGMEM 
 #include <BarStyleBatV.h>
 
 // Define the lcd object for the display as usual
