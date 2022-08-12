@@ -1,10 +1,8 @@
-final prepartions for release...
-
 # SmoothProgress
 
-Library for displaying smooth progress bars on the character based LCD displays for Arduino
-
 ![SmoothProgress LCD Graph](extras/SmoothProgressLogoS.png)
+
+Library for displaying smooth progress bars on the character based LCD displays for Arduino
 
 SmoothProgress is a library for displaying horizontal or vertical progress bars on a character based LCDs like Hitachi HD44780 16x2 or 20x4.
 Relies on the underlaying [LiquidCrystal](https://www.arduino.cc/en/Reference/LiquidCrystal), [LiquidCrystal_I2C](https://www.arduino.cc/reference/en/libraries/liquidcrystal-i2c/) library (and should work on any platform that supports this library or similar).
@@ -118,11 +116,15 @@ The length in pixel columns of the progress bar can be found by calling the size
 
 Some examples of using the library:
 
-![ProgressBar0](https://github.com/Gjorgjevikj/SmoothProgress/blob/main/extras/SmootProgressBar_0_16x2.png) ![ProgressBar1](https://github.com/Gjorgjevikj/SmoothProgress/blob/main/extras/SmootProgressBar_1_16x2.png)
+![ProgressBar0](extras/spb2s0.png) ![ProgressBar1](extras/spb2s1.png)
 
-![Battery6](https://github.com/Gjorgjevikj/SmoothProgress/blob/main/extras/BatteryGauge_6_16x2.png) ![Battery7](https://github.com/Gjorgjevikj/SmoothProgress/blob/main/extras/BatteryGauge_7_16x2.png)
+![ProgressBar2](extras/spb2s2.png) ![ProgressBar3](extras/spb2s3.png)
 
-![ProgressBar3](https://github.com/Gjorgjevikj/SmoothProgress/blob/main/extras/SmootProgressBar_1_20x4.png) ![Battery8](https://github.com/Gjorgjevikj/SmoothProgress/blob/main/extras/BatteryGauge_7_20x4.png)
+![ProgressBar4](extras/spb2s4.png) ![ProgressBat](extras/BatteryGauge_6.jpg)
+
+![ProgressV2](extras/v2.png) ![ProgressT4v](extras/T4v.png)
+
+![ProgressBat4h](extras/Bat4h.png) ![ProgressBat4v](extras/Bat4v.png)
 
 
 Known limitations:
