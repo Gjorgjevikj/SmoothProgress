@@ -40,7 +40,7 @@
 // than include the Smooth progress bars library
 #include <SmoothProgress.h>
 
-// SmoothLCDProgressBars supports progress bars in different visual styles
+// SmoothProgress supports progress bars in different visual styles
 // Each style is stored in separate .h file that should be included next (you have to use at leas one)
 // Let's include the style for horizontal progress bar as a square frame with 1 pixel margin
 #include <BarStyle1.h>

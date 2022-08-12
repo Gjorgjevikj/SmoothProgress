@@ -1,10 +1,10 @@
 #ifndef BAR_STYLE_STRUCT
 #define BAR_STYLE_STRUCT
 
-// Part of the SmoothLCDProgressBars library for Arduino
+// Part of the SmoothProgress library for Arduino
 // Defines a structure containing bit-masks defining a style for a smooth progress bar 
-// to be used with SmoothLCDProgressBars library
-// https://github.com/Gjorgjevikj/SmoothLCDProgressBars.git
+// to be used with SmoothProgress library
+// https://github.com/Gjorgjevikj/SmoothProgress.git
 
 // some utility functions ...
 // creates bit-mask with N LSB bits set to 1 

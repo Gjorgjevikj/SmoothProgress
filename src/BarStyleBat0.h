@@ -2,8 +2,8 @@
 #define BAR_STYLE_BAT0
 
 // Contains the bit masks defining a style for a smooth progress bar 
-// to be used with SmoothLCDProgressBars library
-// https://github.com/Gjorgjevikj/SmoothLCDProgressBars.git
+// to be used with SmoothProgress library
+// https://github.com/Gjorgjevikj/SmoothProgress.git
 // 
 // Defines a smooth horizontal progress bar representing a battery
 // 1 pixel frame, 1 pixel margin, 2 pixel offsets 

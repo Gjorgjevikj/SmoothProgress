@@ -9,7 +9,7 @@
 #include <LiquidCrystal_I2C.h> 
 #include <SmoothProgress.h>
 
-// SmoothLCDProgressBars supports different styles, each stored in separate .h file that should be included next
+// SmoothProgress supports different styles, each stored in separate .h file that should be included next
 // Let's include the style for horizontal progress bar as in a square frame with 1 pixel margin
 #include <BarStyle2.h>
 

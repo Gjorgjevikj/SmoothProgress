@@ -34,7 +34,7 @@
 // than include the Smooth progress bars library
 #include <SmoothProgress.h>
 
-// SmoothLCDProgressBars supports different styles, each stored in separate .h file that should be included next
+// SmoothProgress supports different styles, each stored in separate .h file that should be included next
 // Let's include the style for horizontal progress bar as in a square frame with 1 pixel margin
 #include <BarStyle1.h>
 #include <BarStyle2.h>
@@ -58,7 +58,9 @@ void setup()
     lcd.init();
 
     lcd.backlight();                  // enable backlight for the LCD module
-    lcd.print("Smooth progress bar");
+    lcd.print("Smooth");
+    lcd.setCursor(0, 1);
+    lcd.print("Progress");
 
     // also initialize the bar_display object (loads the style)
     dispA.begin();

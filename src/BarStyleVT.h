@@ -2,8 +2,8 @@
 #define BAR_STYLE_V_T
 
 // Contains the bit masks defining a style for a smooth progress bar 
-// to be used with SmoothLCDProgressBars library
-// https://github.com/Gjorgjevikj/SmoothLCDProgressBars.git
+// to be used with SmoothProgress library
+// https://github.com/Gjorgjevikj/SmoothProgress.git
 // 
 // Defines a vertical smooth progress bar for temperature gauge
 // 1 pixel frame, 1 pixel margin to frame, rounded edges

@@ -2,8 +2,8 @@
 #define BAR_STYLE_G_1
 
 // Contains the bit masks defining a style for a smooth progress bar 
-// to be used with SmoothLCDProgressBars library
-// https://github.com/Gjorgjevikj/SmoothLCDProgressBars.git
+// to be used with SmoothProgress library
+// https://github.com/Gjorgjevikj/SmoothProgress.git
 // 
 // Defines a horizontal smooth gauge line
 // No frame, full height, square edges, plain

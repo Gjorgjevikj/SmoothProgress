@@ -17,7 +17,7 @@
 // than include the Smooth progress bars library
 #include <SmoothProgress.h>
 
-// SmoothLCDProgressBars supports different styles, each stored in separate .h file that should be included next
+// SmoothProgress supports different styles, each stored in separate .h file that should be included next
 // Let's include the style for horizontal progress bar as in a rounded frame with 1 pixel margin
 // To use the program (flash) memory (A.K.A. PROGMEM) for storing the masks that define the style of the progress bar (and save some RAM memory)
 // insert #define BAR_STYLE_<#>_IN_PROGMEM before including the corresponding header with the style

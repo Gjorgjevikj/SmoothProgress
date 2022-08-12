@@ -2,8 +2,8 @@
 #define BAR_STYLE_3
 
 // Contains the bit masks defining a style for a smooth progress bar 
-// to be used with SmoothLCDProgressBars library
-// https://github.com/Gjorgjevikj/SmoothLCDProgressBars.git
+// to be used with SmoothProgress library
+// https://github.com/Gjorgjevikj/SmoothProgress.git
 // 
 // Defines a smooth horizontal progress bar rounded style no frame
 // 1 pixel frame, no margin (full height), more rounded edges

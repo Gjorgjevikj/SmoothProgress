@@ -53,7 +53,7 @@ https://github.com/Gjorgjevikj/SmoothProgress.git
 #define LCD_OBJ LiquidCrystal
 #else
 #define LCD_OBJ ERROR_NO_LCD_OBJ
-#error "No supported LiquidCrystal library included. Please check that the LiquidCrystal library is included BEFORE SmoothLCDProgressBars.h"
+#error "No supported LiquidCrystal library included. Please check that the LiquidCrystal library is included BEFORE SmoothProgress.h"
 #endif
 
 // constants to specify where there the data for the progress bar style (bit-masks) are stored in memory (SRAM) or in flash (PROGMEM)

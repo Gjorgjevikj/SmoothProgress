@@ -4,7 +4,7 @@
  * @brief Four horizontal / vertical battery gauges example using smooth progress bars 
  *
  * This example shows how to display a four horizontal and vertical battery gauges 
- * on a character LCD display using the SmoothLCDProgressBars library.
+ * on a character LCD display using the SmoothProgress library.
  */
 
  // Wiring : see the comments in the basic.ino example
@@ -15,7 +15,7 @@
 // than include the Smooth progress bars library
 #include <SmoothProgress.h>
 
-// SmoothLCDProgressBars supports different styles, each stored in separate .h file that should be included next
+// SmoothProgress supports different styles, each stored in separate .h file that should be included next
 // Include the style for basic horizontal battery bar BarStyleBat.h
 // To use the flash (program) memory (a.k.a. PROGMEM) for storing the masks that define the style of the progress bar 
 // (and save some RAM memory) insert #define BAR_STYLE_<#>_IN_PROGMEM before including the corresponding header with the style

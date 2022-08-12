@@ -1,9 +1,9 @@
 #ifndef BAR_STYLE_SS
 #define BAR_STYLE_SS
 
-// Contains the bit masks defining a style for a smooth progress bar
-// to be used with SmoothLCDProgressBars library
-// https://github.com/Gjorgjevikj/SmoothLCDProgressBars.git
+// Contains the bit masks defining a style for a smooth progress bar 
+// to be used with SmoothProgress library
+// https://github.com/Gjorgjevikj/SmoothProgress.git
 // 
 // Defines a smooth horizontal progress bar representing a signal strength 
 // for fixed 3 characters length no frame, no margin, no offsets 

@@ -4,7 +4,7 @@ under developement...
 
 Library for displaying smooth progress bars on the character based LCD displays for Arduino
 
-Uses the user definable characters of the LCD display and can display up to 4 smoot gauges simultaneously. Relies on the LiquidCrystal_I2C.h or LiquidCrystal.h library. It should also work with other libraries for the character LCD displays based on the Hitachi HD44780 or compatible controllers that support write(uint8_t), setCursor(uint8_t, uint8_t) and createChar(uint8_t, uint8_t[]). Just include the LiquidCrystal library **before** including SmoothLCDProgressBars.h.
+Uses the user definable characters of the LCD display and can display up to 4 smoot gauges simultaneously. Relies on the LiquidCrystal_I2C.h or LiquidCrystal.h library. It should also work with other libraries for the character LCD displays based on the Hitachi HD44780 or compatible controllers that support write(uint8_t), setCursor(uint8_t, uint8_t) and createChar(uint8_t, uint8_t[]). Just include the LiquidCrystal library **before** including SmoothProgress.h.
 
 ![ProgressBar0](https://github.com/Gjorgjevikj/SmoothProgress/blob/main/extras/SmootProgressBar_0_16x2.png) ![ProgressBar1](https://github.com/Gjorgjevikj/SmoothProgress/blob/main/extras/SmootProgressBar_1_16x2.png)
 
