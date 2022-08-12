@@ -520,5 +520,4 @@ protected:
 typedef BarDisplay < LCD_OBJ > LCD;
 typedef ProgressBar < BarDisplay < LCD_OBJ > > SmoothProgressBar;
 
-
 #endif // SMOOTH_PROGRESS_H
