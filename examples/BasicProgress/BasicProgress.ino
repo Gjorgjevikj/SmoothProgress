@@ -63,17 +63,14 @@ SmoothProgressBar spb(dispA, 10, 5, 0); // progress bar 10 characters wide, at 5
 void setup()
 {
     // do the usual lcd initialization for the used liquid crystal library
-    //lcd.init();   
     lcd.begin(16, 2);
 
-    //lcd.backlight();                  // enable backlight for the LCD module
     lcd.print("Smooth progress bar");
 
     // also initialize the bar_display object (loads the style)
     dispA.begin();
 
     delay(2000);
-//    while (1);
 }
 
 void loop()

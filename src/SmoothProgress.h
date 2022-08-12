@@ -33,6 +33,8 @@ https://github.com/Gjorgjevikj/SmoothProgress.git
 #ifndef SMOOTH_PROGRESS_H
 #define SMOOTH_PROGRESS_H
 
+#define SMOOTH_PROGRESS_VER 1.0.0
+
 #include <barstyle.h>
 
 //try to determine the LCD library included
