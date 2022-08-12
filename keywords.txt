@@ -4,38 +4,47 @@
 #######################################
 # Datatypes (KEYWORD1)
 #######################################
-LCDProgressBar	KEYWORD1
-LCDBatteryGauge	KEYWORD1
-PixelMatrix	KEYWORD1
-CustomChar	KEYWORD1
-
+barstyle	KEYWORD1
+bspar	KEYWORD1
+__FlashBarStyleHelper	KEYWORD1
+BarDisplay	KEYWORD1
+MemoryType	KEYWORD1
+BarPos	KEYWORD1
+ProgressBar	KEYWORD1
+BarDisplay	KEYWORD1
+ProgressBar	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
-init	KEYWORD2
-size	KEYWORD2
+FBS	KEYWORD2
+inPROGMEM	KEYWORD2
+display	KEYWORD2
+getStyle	KEYWORD2
+setStyle	KEYWORD2
+stylePar	KEYWORD2
+styleStartOffset	KEYWORD2
+styleEndOffset	KEYWORD2
+styleOrientation	KEYWORD2
+begin	KEYWORD2
+makeChar	KEYWORD2
+setLength	KEYWORD2
+getLength	KEYWORD2
 setPosition	KEYWORD2
-setWidth	KEYWORD2
+col	KEYWORD2
+row	KEYWORD2
+size	KEYWORD2
 showProgress	KEYWORD2
 showProgressPct	KEYWORD2
-
 
 ######################################
 # Constants (LITERAL1)
 ######################################
-pbBlank	LITERAL1
-pbLeft	LITERAL1
-pbMiddle	LITERAL1
-pbRight	LITERAL1
-pbLeft2	LITERAL1
-pbMiddle2	LITERAL1
-pbRight2	LITERAL1
-pbFull	LITERAL1
-charRows	LITERAL1
-charCols	LITERAL1
-batBlank	LITERAL1
-batLeft	LITERAL1
-batMid	LITERAL1
-batRight	LITERAL1
-batFull	LITERAL1
+RAM	LITERAL1
+FLASH	LITERAL1
+CharPatRows	LITERAL1
+CharPatCols	LITERAL1
+ANDmask	LITERAL1
+ORmask	LITERAL1
+Horizontal	LITERAL1
+Vertical	LITERAL1

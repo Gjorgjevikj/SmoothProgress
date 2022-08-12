@@ -118,7 +118,7 @@ public:
     /// Access to the display object for low level functions of the LCD
     /// </summary>
     /// <returns>a pointer to the LCD display object</returns>
-    inline DISP & dsplay() const
+    inline DISP & display() const
     {
         return disp;
     }
@@ -477,8 +477,8 @@ protected:
             barDisp.makeChar(DISP::ProgBarCharPartial + n, barDisp.getStyle().endMask, mask);
         }
 
-        barDisp.dsplay().setCursor(par.col, par.row);
-        barDisp.dsplay().write((val < cellDim) ? (DISP::ProgBarCharPartial + n) : DISP::ProgBarCharBegin);
+        barDisp.display().setCursor(par.col, par.row);
+        barDisp.display().write((val < cellDim) ? (DISP::ProgBarCharPartial + n) : DISP::ProgBarCharBegin);
 
         // show on the display 
         byte crow = par.row;
@@ -486,31 +486,31 @@ protected:
         {
             if (barStylePar.dir)
             {
-                barDisp.dsplay().setCursor(par.col, --crow);
+                barDisp.display().setCursor(par.col, --crow);
             }
-            barDisp.dsplay().write(DISP::ProgBarCharFull);
+            barDisp.display().write(DISP::ProgBarCharFull);
         }
         if (partial)
         {
             if (barStylePar.dir)
             {
-                barDisp.dsplay().setCursor(par.col, --crow);
+                barDisp.display().setCursor(par.col, --crow);
             }
-            barDisp.dsplay().write(DISP::ProgBarCharPartial + n);
+            barDisp.display().write(DISP::ProgBarCharPartial + n);
         }
         while (blank--)
         {
             if (barStylePar.dir)
             {
-                barDisp.dsplay().setCursor(par.col, --crow);
+                barDisp.display().setCursor(par.col, --crow);
             }
-            barDisp.dsplay().write(DISP::ProgBarCharBlank);
+            barDisp.display().write(DISP::ProgBarCharBlank);
         }
         if (barStylePar.dir)
         {
-            barDisp.dsplay().setCursor(par.col, --crow);
+            barDisp.display().setCursor(par.col, --crow);
         }
-        barDisp.dsplay().write((val > (par.len - 1) * cellDim) ? (DISP::ProgBarCharPartial + n) : DISP::ProgBarCharEnd);
+        barDisp.display().write((val > (par.len - 1) * cellDim) ? (DISP::ProgBarCharPartial + n) : DISP::ProgBarCharEnd);
     }
     
     //data
