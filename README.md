@@ -114,7 +114,7 @@ spb.showProgress(i);
 or you can use showProgress() method and specifying the absolute number of columns to be filled. 
 The length in pixel columns of the progress bar can be found by calling the size() method.
 
-Some examples of using the library:
+Some examples using the library:
 
 ![ProgressBar0](extras/spb2s0.png) ![ProgressBar1](extras/spb2s1.png)
 
