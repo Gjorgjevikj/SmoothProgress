@@ -21,7 +21,7 @@
 // (and save some RAM memory) insert #define BAR_STYLE_<#>_IN_PROGMEM before including the corresponding header with the style
 // Do not forget to use the wrapper when passing the style structure to barstyle (LCD) constructor
 #define BAR_STYLE_BAT_IN_PROGMEM 
-#include <BarStyleBat.h>
+#include <BarStyleBAT.h>
 #define BAR_STYLE_BAT_V_IN_PROGMEM 
 #include <BarStyleBatV.h>
 
