@@ -1,0 +1,41 @@
+#######################################
+# Syntax Coloring Map
+#######################################
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+LCDProgressBar	KEYWORD1
+LCDBatteryGauge	KEYWORD1
+PixelMatrix	KEYWORD1
+CustomChar	KEYWORD1
+
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+init	KEYWORD2
+size	KEYWORD2
+setPosition	KEYWORD2
+setWidth	KEYWORD2
+showProgress	KEYWORD2
+showProgressPct	KEYWORD2
+
+
+######################################
+# Constants (LITERAL1)
+######################################
+pbBlank	LITERAL1
+pbLeft	LITERAL1
+pbMiddle	LITERAL1
+pbRight	LITERAL1
+pbLeft2	LITERAL1
+pbMiddle2	LITERAL1
+pbRight2	LITERAL1
+pbFull	LITERAL1
+charRows	LITERAL1
+charCols	LITERAL1
+batBlank	LITERAL1
+batLeft	LITERAL1
+batMid	LITERAL1
+batRight	LITERAL1
+batFull	LITERAL1
