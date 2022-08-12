@@ -136,9 +136,6 @@ So here it is, hopefully someone else can find a use of it (or make a comment).
 Until a better guide is written...
 for further explanation on the usage:
 - see the [examples](examples) 
-- see the [docs](docs/html/index.html)
+- see the docs in docs/html/index.html
 - see the comments in the code
-
-
-
 
