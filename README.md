@@ -83,7 +83,7 @@ Next we have to create an association  between the LiquidCrystal display and the
 LCD dispA(lcd, barStyle1);
 ```
 
-##Creating the Smooth brogress bar objects
+## Creating the Smooth brogress bar objects
 
 ```c++
 SmoothProgressBar spb1(dispA, 10, 0, 0, 0); // progress bar 10 characters wide, at 0-th row, 0-th column, as progress bar 0
@@ -105,6 +105,8 @@ void setup()
 }
 ```
 
+## Showing the progress bar
+
 You can show the progress bar calling showProgressPct() and specifying the percentage [0-100] to be filled 
 
 ```c++
@@ -115,6 +117,8 @@ spb.showProgress(i);
 
 or you can use showProgress() method and specifying the absolute number of columns to be filled. 
 The length in pixel columns of the progress bar can be found by calling the size() method.
+
+## "Screenshots"
 
 Some examples using the library:
 
@@ -128,7 +132,9 @@ Some examples using the library:
 
 ![ProgressBat4h](extras/Bat4h.png) ![ProgressBat4v](extras/Bat4v.png)
 
-Examples (in the exmaples foledr) - you can see them live in the Wokwi simulator:
+## Examples 
+
+(in the exmaples foledr) - you can see them live in the Wokwi simulator:
 
  - [BasicProgress](https://wokwi.com/projects/340163942547456594)
  - [TwoPB_i2c](https://wokwi.com/projects/340162617844695634)
@@ -140,7 +146,7 @@ Examples (in the exmaples foledr) - you can see them live in the Wokwi simulator
  - [BatteryGauge](https://wokwi.com/projects/340161967281930834)
  - [MultipleDisplays](https://wokwi.com/projects/340166928469328468)
 
-Known limitations:
+### Known limitations:
  - at most 4 independent progress bars can be shown (restricted by the limitation of only 8 user definable characters on these displays)
  - all progress bars on the LCD share the same style (due to hardware limitations of only 8 user definable characters on these displays)
  - the progress bars are "drawn" by printing over all the characters defining the progress bar on every call of showProgress (can be slow on these displays)
@@ -148,14 +154,16 @@ Known limitations:
 
 So here it is, hopefully someone else can find a use of it (or make a comment).
 
-Until a better guide is written...
+### Until a better guide is written...
+
 for further explanation on the usage:
 - see the [examples](examples) 
-- see the docs in docs/html/index.html
+- for the full API explanation see the docs in docs/html/index.html
 - see the comments in the code
+
+---
 
 ... todo ... maybe ...
 - guide explaining the barstyle struct for defining user styles
 - extending the class to print only the changed characters on updates
 - extending the class to show horizontal gauges (like linear dial/slider)
-- 
