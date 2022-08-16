@@ -128,6 +128,8 @@ Some examples using the library:
 
 Examples (in the exmaples foledr) - you can see them live in the Wokwi simulator:
 
+[VericalProgessBar](https://wokwi.com/projects/340162249626747475)
+[VericalProgessBarTemp](https://wokwi.com/projects/340162445985186388)
 [BatteryGauge](https://wokwi.com/projects/340161967281930834)
 
 Known limitations:
