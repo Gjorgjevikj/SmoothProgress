@@ -126,6 +126,9 @@ Some examples using the library:
 
 ![ProgressBat4h](extras/Bat4h.png) ![ProgressBat4v](extras/Bat4v.png)
 
+Examples (in the exmaples foledr) - you can see them live in the Wokwi simulator:
+
+[BatteryGauge](https://wokwi.com/projects/340161967281930834)
 
 Known limitations:
  - at most 4 independent progress bars can be shown (restricted by the limitation of only 8 user definable characters on these displays)
