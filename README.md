@@ -16,7 +16,7 @@ All interfacing to the lcd is handled by the built in Arduino `LiquidCrystal`, `
 
 # Getting started
 ## Installing the library
-... hopefully it will be addad to Arduino libarary manager soon...
+Search for SmoothProgress in the libraries manager or copy this folder into the Arduino library folder. You may want to restart the Arduino IDE if you are using it to get syntax highlighting to update.
 
 ## Including in your sketch
 Add these lines to the top of your sketch:
