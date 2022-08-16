@@ -128,6 +128,14 @@ Some examples using the library:
 
 Examples (in the exmaples foledr) - you can see them live in the Wokwi simulator:
 
+[TwoPB_i2c](https://wokwi.com/projects/340162617844695634)
+
+[FourPB](https://wokwi.com/projects/340163248599859794)
+
+[StylesInFlash](https://wokwi.com/projects/340162932171080276)
+
+[SinglePBudc](https://wokwi.com/projects/340163109423415890)
+
 [VericalProgessBar](https://wokwi.com/projects/340162249626747475)
 
 [VericalProgessBarTemp](https://wokwi.com/projects/340162445985186388)
