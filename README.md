@@ -66,15 +66,17 @@ if you use a LCD display with an I2C extender board.
 The library supports multiple progress bars (up to 4) on a single display.
 The smooth progress bars are "drawn" using the user definable characters that are appropriately programmed with appropriate image to be used in showing the progress.
 Since these displays have only 8 user definable characters, only 4 progress bars can be supported at a time.
- * Each progress bar is "drawn" by printing (in general) 5 different user defined characters:
- *   1. one on the left edge  
- *   2. one in the middle that is completely full (left of the growing edge) 
- *   3. the character representing the growing edge that is partially filled
- *   4. one in the middle that is completely blank (right of the growing edge) 
- *   5. one on the right edge  
- * Except for the character representing the growing edge, the other 4 are common for all progress bars on the display.
- * 4 common + 4 growing edges = 4 independent progress bars at once
+
+Each progress bar is "drawn" by printing (in general) 5 different user defined characters:
+1. one on the left edge  
+2. one in the middle that is completely full (left of the growing edge) 
+3. the character representing the growing edge that is partially filled
+4. one in the middle that is completely blank (right of the growing edge) 
+5. one on the right edge  
+Except for the character representing the growing edge, the other 4 are common for all progress bars on the display.
+4 common + 4 growing edges (one for each progress bar) = 4 independent progress bars at once.
 The hardware limitation of the character LCD displays dictates that all progress bars on a single display have to share the same style, so the progress bar style is linked to a single LCD display regardless of the number of progress bars (1-4) to be shown.
+
 Next we have to create an association  between the LiquidCrystal display and the progress bar style as a separate BarDisplay (LCD) object (dispA in the examle) to be used when creating the  objects representing the smooth progress bars and manipulating their style
 
 ```c++
@@ -128,31 +130,32 @@ Some examples using the library:
 
 Examples (in the exmaples foledr) - you can see them live in the Wokwi simulator:
 
-[BasicProgress](https://wokwi.com/projects/340163942547456594)
-
-[TwoPB_i2c](https://wokwi.com/projects/340162617844695634)
-
-[FourPB](https://wokwi.com/projects/340163248599859794)
-
-[StylesInFlash](https://wokwi.com/projects/340162932171080276)
-
-[SinglePBudc](https://wokwi.com/projects/340163109423415890)
-
-[VericalProgessBar](https://wokwi.com/projects/340162249626747475)
-
-[VericalProgessBarTemp](https://wokwi.com/projects/340162445985186388)
-
-[BatteryGauge](https://wokwi.com/projects/340161967281930834)
+ - [BasicProgress](https://wokwi.com/projects/340163942547456594)
+ - [TwoPB_i2c](https://wokwi.com/projects/340162617844695634)
+ - [FourPB](https://wokwi.com/projects/340163248599859794)
+ - [StylesInFlash](https://wokwi.com/projects/340162932171080276)
+ - [SinglePBudc](https://wokwi.com/projects/340163109423415890)
+ - [VericalProgessBar](https://wokwi.com/projects/340162249626747475)
+ - [VericalProgessBarTemp](https://wokwi.com/projects/340162445985186388)
+ - [BatteryGauge](https://wokwi.com/projects/340161967281930834)
+ - [MultipleDisplays](https://wokwi.com/projects/340166928469328468)
 
 Known limitations:
  - at most 4 independent progress bars can be shown (restricted by the limitation of only 8 user definable characters on these displays)
  - all progress bars on the LCD share the same style (due to hardware limitations of only 8 user definable characters on these displays)
- - the progress bars are "drawn" by printing over all the characters defining the progress bar on every call of showProgress
+ - the progress bars are "drawn" by printing over all the characters defining the progress bar on every call of showProgress (can be slow on these displays)
+ - will interfere if used together with other libraries using the user definable characters (like [BigNumbers](https://github.com/seanauff/BigNumbers), [LCDGraph](https://github.com/jgOhYeah/LCDGraph) and similar). 
 
 So here it is, hopefully someone else can find a use of it (or make a comment).
+
 Until a better guide is written...
 for further explanation on the usage:
 - see the [examples](examples) 
 - see the docs in docs/html/index.html
 - see the comments in the code
 
+... todo ... maybe ...
+- guide explaining the barstyle struct for defining user styles
+- extending the class to print only the changed characters on updates
+- extending the class to show horizontal gauges (like linear dial/slider)
+- 
