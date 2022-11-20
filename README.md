@@ -26,7 +26,6 @@ First include the LiquidCrystal library <LiquidCrystal.h> or <LiquidCrystal_I2C.
 // Libraries to include
 //#include <LiquidCrystal_I2C.h> 
 #include <LiquidCrystal.h> 
-#include <LiquidCrystal.h>
 ```
 
 After that include the SmoothProgress library
