@@ -1,0 +1,59 @@
+name: Compile Examples
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/compile-examples.yml"
+      - "examples/**"
+      - "src/**"
+  push:
+    paths:
+      - ".github/workflows/compile-examples.yml"
+      - "examples/**"
+      - "src/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      # libraries to install for all boards
+      UNIVERSAL_LIBRARIES: |
+        # Install the Arduino LCD libraries from the repository
+        - source-path: ./
+        - name: LiquidCrystal_I2C 
+        - name: LiquidCrystal
+        - name: hd44780 
+
+      # sketch paths to compile (recursive) for all boards
+      UNIVERSAL_SKETCH_PATHS: |
+        - ./examples/BasicProgress
+        - ./examples/BatteryGauge
+        - ./examples/FourPB
+        - ./examples/MultipleDisplays
+        - ./examples/SinglePBudc
+        - ./examples/StylesInFlash
+        - ./examples/TwoPB_i2c
+        - ./examples/VericalProgessBar
+        - ./examples/VericalProgessBarTemp
+
+      SKETCHES_REPORTS_PATH: sketches-reports        
+            
+    strategy:
+      fail-fast: false
+
+    steps:
+      # This step makes the contents of the repository available to the workflow
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Compile examples
+        uses: arduino/compile-sketches@v1
+        with:
+          libraries: |
+            ${{ env.UNIVERSAL_LIBRARIES }}
+          sketch-paths: |
+            ${{ env.UNIVERSAL_SKETCH_PATHS }}
+          enable-deltas-report: "true"
+          sketches-report-path: ${{ env.SKETCHES_REPORTS_PATH }}
+    
