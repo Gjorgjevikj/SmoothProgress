@@ -23,7 +23,7 @@ jobs:
         - source-path: ./
         - name: LiquidCrystal
         - name: hd44780 
-        - name: LiquidCrystal_I2C 
+        - name: LiquidCrystal I2C 
 
       # sketch paths to compile (recursive) for all boards
       UNIVERSAL_SKETCH_PATHS: |
