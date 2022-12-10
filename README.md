@@ -1,5 +1,7 @@
 # SmoothProgress
 
+image:https://github.com/{repository-owner}/{repository-name}/actions/workflows/compile-examples.yml/badge.svg["Compile Examples status", link="https://github.com/{repository-owner}/{repository-name}/actions/workflows/compile-examples.yml"]
+
 ![SmoothProgress LCD Graph](extras/SmoothProgressLogoS.png)
 
 Library for displaying smooth progress bars on the character based LCD displays for Arduino
