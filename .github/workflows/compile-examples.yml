@@ -21,9 +21,9 @@ jobs:
       UNIVERSAL_LIBRARIES: |
         # Install the Arduino LCD libraries from the repository
         - source-path: ./
-        - name: LiquidCrystal_I2C 
         - name: LiquidCrystal
         - name: hd44780 
+        - name: LiquidCrystal_I2C 
 
       # sketch paths to compile (recursive) for all boards
       UNIVERSAL_SKETCH_PATHS: |
