@@ -133,7 +133,7 @@ Some examples using the library:
 
 ## Examples 
 
-(in the exmaples foledr) - you can see them live in the Wokwi simulator:
+The exmaples in the Examples folder - you can see them live in the Wokwi simulator:
 
  - [BasicProgress](https://wokwi.com/projects/340163942547456594)
  - [TwoPB_i2c](https://wokwi.com/projects/340162617844695634)
