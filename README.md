@@ -82,7 +82,7 @@ Next we have to create an association  between the LiquidCrystal display and the
 LCD dispA(lcd, barStyle1);
 ```
 
-## Creating the Smooth brogress bar objects
+## Creating the Smooth progress bar objects
 
 ```c++
 SmoothProgressBar spb1(dispA, 10, 0, 0, 0); // progress bar 10 characters wide, at 0-th row, 0-th column, as progress bar 0
